@@ -13,6 +13,8 @@ import { EditorComponent } from './editor/editor.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 
     TopBarComponent,
 
-    HomePageComponent
+    HomePageComponent,
+
+    FirstComponent,
+
+    SecondComponent
   ],
   imports: [
     RouterModule.forRoot([
