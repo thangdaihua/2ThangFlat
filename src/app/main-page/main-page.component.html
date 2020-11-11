@@ -1,0 +1,101 @@
+<div class="row">
+    <div class="col-2">
+        <p class="title-option">Gender</p>
+        <ul class="list-option">
+            <li> <button class="option" (click)="setMale()"> <img class="image-Option"
+                        src="assets/img/male.png"></button> </li>
+            <li> <button class="option" (click)="setFemale()"> <img class="image-Option"
+                        src="assets/img/female.png"></button> </li>
+        </ul>
+        <p class="title-option">Posture</p>
+        <ul class="list-option">
+            <li> <button class="option" (click)="setStanding()"> <img class="image-Option"
+                        src="assets/img/standing.png"></button> </li>
+            <li> <button class="option" (click)="setRunning()"> <img class="image-Option"
+                        src="assets/img/runing.png"></button> </li>
+            <li> <button class="option" (click)="setCycling()"> <img class="image-Option"
+                        src="assets/img/cycling.png"></button> </li>
+            <li> <button class="option" (click)="setWalking()"> <img class="image-Option"
+                        src="assets/img/walking.png"></button> </li>
+        </ul>
+        <p class="title-option">Style</p>
+        <ul class="list-option">
+            <li> <button class="option" (click)="setColorful()"> <img class="image-Option"
+                        src="assets/img/colorfull.png"></button> </li>
+            <li> <button class="option" (click)="setDuotone()"> <img class="image-Option"
+                        src="assets/img/duotone.png"></button> </li>
+        </ul>
+    </div>
+
+    <div class="col-6">
+        <div class="d-flex justify-content-center">
+            <img class="img-content" src="assets/images/backdrops/{{style}}/{{fileNameBackdrops}}.svg">
+            <img class="img-content" src="assets/images/{{gender}}/head/{{style}}/{{fileNameHead}}.svg">
+            <img class="img-content" src="assets/images/{{gender}}/bottom/{{style}}/{{pose}}/{{fileNameBottom}}.svg">
+            <img class="img-content" src="assets/images/{{gender}}/top/{{style}}/{{pose}}/{{fileNameTop}}.svg">
+        </div>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-3">
+        <div class="component-options">
+            <p class="title-option-carousel">Head</p> <br>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let item of carouselHead">
+                    <ng-template class="item-carousel" carouselSlide>
+                        <div class="preview">
+                            <button class="active" (click)="setHeadOption(item.id-1)">
+                                <img class="head-preview" src="{{item.imageLink}}">
+                            </button>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+
+        <div class="component-options">
+            <p class="title-option-carousel">Body</p> <br>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let item of carouselBody">
+                    <ng-template class="item-carousel" carouselSlide>
+                        <div class="preview">
+                            <button class="active" (click)="setBodyOption(item.id)">
+                                <img class="body-preview" src="{{item.imageLink}}">
+                            </button>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+
+        <div class="component-options">
+            <p class="title-option-carousel">Bottom</p> <br>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let item of carouselBottom">
+                    <ng-template class="item-carousel" carouselSlide>
+                        <div class="preview">
+                            <button class="active" (click)="setBottomOption(item.id)">
+                                <img class="bottom-preview" src="{{item.imageLink}}">
+                            </button>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+        <div class="component-options">
+            <p class="title-option-carousel">Backdrop</p> <br>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let item of carouselBackdrop">
+                    <ng-template class="item-carousel" carouselSlide>
+                        <div class="preview">
+                            <button class="active" (click)="setBackdropOption(item.id)">
+                                <img class="backdrop-preivew" src="{{item.imageLink}}">
+                            </button>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

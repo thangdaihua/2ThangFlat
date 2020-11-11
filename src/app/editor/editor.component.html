@@ -1,0 +1,145 @@
+<div class="row">
+    <div class="col-2">
+        <div>
+            <span class="action">
+                <button data-toggle="tooltip" data-placement="bottom" title="Delete element" type="button"
+                    class="btn btn-outline-danger" [disabled]="!canvas.selected" (click)="removeSelected();">
+                    <img class="action-eletment img-btn " src="assets/img/del-element.png">
+                </button>
+                <button data-toggle="tooltip" data-placement="bottom" title="Send to back" type="button"
+                    class="btn btn-outline-primary" [disabled]="!canvas.selected" (click)="sendToBack();">
+                    <img class="action-eletment img-btn " src="assets/img/back.png">
+                </button>
+                <button data-toggle="tooltip" data-placement="bottom" title="Send to front" type="button"
+                    class="btn btn-outline-primary" [disabled]="!canvas.selected" (click)="bringToFront();">
+                    <img class="action-eletment img-btn " src="assets/img/front.png">
+                </button>
+            </span>
+        </div>
+        <p class="title-left">Add figure</p>
+        <br>
+        <span class="action">
+            <button type="button" class="btn figure" (click)="addFigure('rectangle');"><img
+                    src="assets/img/Rectangle .png" class="image-figure"></button>
+            <button type="button" class="btn figure" (click)="addFigure('square');"><img src="assets/img/Rectangle.png"
+                    class="image-figure"></button>
+            <button type="button" class="btn figure" (click)="addFigure('triangle');"><img src="assets/img/Polygon.png"
+                    class="image-figure"></button>
+            <button type="button" class="btn figure" (click)="addFigure('circle');"><img src="assets/img/Ellipse.png"
+                    class="image-figure"></button>
+        </span>
+        <br>
+        <p class="title-left">Add local asset</p>
+        <div class="upload-image ">
+            <img id="testImage" *ngIf="canvas.url" class="images-item-upload text-center" [src]="canvas.url"
+                (click)="addImageOnCanvas(canvas.url);">
+            <br>
+            <br>
+            <span>
+                <input type="file" id="upload" hidden (change)="readUrl($event);" />
+                <label for="upload"><img class="img-btn" src="assets/img/upload.png"></label>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn-del" (click)="removeWhite(canvas.url);">
+                            <img class="img-btn" src="assets/img/del-image.png" alt=""></button>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <p class="title-left">Custom</p>
+        <div class="custom">
+            <div class="custom-item" *ngIf="canvas.selected  && canvas.selected.type == 'group'">Group Selected</div>
+            <div class="custom-item" *ngIf="!canvas.selected">No items selected</div>
+            <div class="custom-item" *ngIf="canvas.selected && canvas.selected.type != 'group'">
+                <div class="custom-item-title">Opacity</div>
+                <div class="custom-item-body">
+                    <input type="range" [(ngModel)]="canvas.props.opacity"
+                        (change)="setOpacity()">{{canvas.props.opacity}}</div>
+            </div>
+            <div class="custom-item"
+                *ngIf="canvas.selected && canvas.textEditor || canvas.selected && canvas.figureEditor">
+                <div class="custom-item-title">Fill</div>
+                <div class="custom-item-body">
+                    <input type="text" class="form-control" [cpPosition]="'bottom'" [(colorPicker)]="canvas.props.fill"
+                        [style.background]="canvas.props.fill" [value]="canvas.props.fill"
+                        (colorPickerChange)="setFill()">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br />
+    <div class="col-6">
+        <angular-editor-fabric-js #canvas class="d-flex justify-content-center"></angular-editor-fabric-js>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-3">
+        <p class="title-left d-flex justify-content-end">Asset</p>
+        <div id="pill" class="add-asset">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-end " id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-head-tab" data-toggle="pill" href="#pills-head" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Head</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-body-tab" data-toggle="pill" href="#pills-body" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Body</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-bottom-tab" data-toggle="pill" href="#pills-bottom" role="tab"
+                        aria-controls="pills-bottom" aria-selected="false">Bottom</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-backdrop-tab" data-toggle="pill" href="#pills-backdrop" role="tab"
+                        aria-controls="pills-backdrop" aria-selected="false">Backdrop</a>
+                </li>
+            </ul>
+            <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-head" role="tabpanel" aria-labelledby="pills-head-tab">
+                    <div class="card-body max-height ">
+                        <ng-container *ngFor="let item of listAssetHead">
+                            <img class="images-item" (click)="getImgPolaroid($event)" src="{{item.imageLink}}">
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-body" role="tabpanel" aria-labelledby="pills-body-tab">
+                    <div class="card-body max-height">
+                        <ng-container *ngFor="let item of listAssetBody">
+                            <img class="images-item" (click)="getImgPolaroid($event)" src="{{item.imageLink}}">
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-bottom" role="tabpanel" aria-labelledby="pills-bottom-tab">
+                    <div class="card-body max-height">
+                        <ng-container *ngFor="let item of listAssetBottom">
+                            <img class="images-item" (click)="getImgPolaroid($event)" src="{{item.imageLink}}">
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-backdrop" role="tabpanel" aria-labelledby="pills-backdrop-tab">
+                    <div class="card-body max-height">
+                        <ng-container *ngFor="let item of listAssetBackdrop">
+                            <img class="images-item" (click)="getImgPolaroid($event)" src="{{item.imageLink}}">
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="title-left d-flex justify-content-end">Set size of editor</p>
+        <div class="row d-flex justify-content-end">
+            <div class="col-4"></div>
+            <div class="col-2">
+                <p style="margin-top: 15px"> Width:</p>
+                <p style="margin-top: 25px"> Height:</p>
+            </div>
+            <div class="col-6">
+                <input type="text" class="input-text" [(ngModel)]="canvas.size.width" (keyup)="changeSize()">
+                <br>
+                <input type="text" class="input-text" style="margin-top: 10px" [(ngModel)]="canvas.size.height"
+                    (keyup)="changeSize()">
+            </div>
+        </div>
+    </div>
+</div>

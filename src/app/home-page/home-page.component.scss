@@ -1,0 +1,38 @@
+img{
+    margin-top: 150px;
+}
+.text{
+    margin-top: 250px;
+}
+p{
+    color: #5A55F7;
+    font-weight: inherit;
+    font-size: 25px;
+    line-height: normal;
+}
+h1{
+    font-weight: bold;
+    font-size: 121px;
+    letter-spacing: -5px;
+    color: #260058;
+}
+.btnc {
+    border: none;
+    font-size: 18px;
+    width: 450px;
+    font-weight: inherit;
+    padding: 20px 35px 20px 35px;
+    border-radius: 30px;
+    color: white;
+}
+.select-domain{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
+}
+.go-to{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,233,0,1) 0%, rgba(228,106,36,1) 100%);
+}
+.btnc:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
