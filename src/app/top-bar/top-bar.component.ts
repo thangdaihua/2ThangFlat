@@ -22,7 +22,7 @@ export class TopBarComponent implements OnInit {
     domtoimage.toBlob(imageElement)
     .then(function (blob) {
         console.log(blob)
-        saveAs.saveAs(blob, 'sss.png');
+        saveAs.saveAs(blob, '2TFlat.png');
     });
   }
 
@@ -37,7 +37,7 @@ export class TopBarComponent implements OnInit {
         var dl = document.createElement("a");
         document.body.appendChild(dl); // This line makes it work in Firefox.
         dl.setAttribute("href", dataUrl);
-        dl.setAttribute("download", "test.svg");
+        dl.setAttribute("download", "2TFlat.svg");
         dl.click();
     });
   }

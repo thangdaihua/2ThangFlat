@@ -1,5 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { FabricjsEditorComponent } from 'projects/angular-editor-fabric-js/src/public-api';
+import domtoimage from 'dom-to-image';
+import { saveAs } from 'file-saver';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-editor',
@@ -144,9 +147,33 @@ export class EditorComponent {
   public rasterizeJSON() {
     this.canvas.rasterizeJSON();
   }
+  constructor(private router: Router) { }
+  public downloadImage(event) {
+    console.log(this.router.url)
+    var imageElement = document.getElementById("main-editor")
+    
+    domtoimage.toBlob(imageElement)
+    .then(function (blob) {
+        console.log(blob)
+        saveAs.saveAs(blob, '2TFlat.png');
+    });
+  }
 
-  constructor() { }
-
+  public filter(node) {
+    return (node.tagName !== 'i');
+}
+ 
+  public saveToSVG(event){
+    domtoimage.toSvg(document.getElementById('main-editor'), {filter: this.filter})
+    .then(function (dataUrl) {
+        /* do something */
+        var dl = document.createElement("a");
+        document.body.appendChild(dl); // This line makes it work in Firefox.
+        dl.setAttribute("href", dataUrl);
+        dl.setAttribute("download", "2TFlat.svg");
+        dl.click();
+    });
+  }
   ngOnInit(): void {
     for ( let i = 1; i<=50 ; i++){
       this.listAssetHead.push({

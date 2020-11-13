@@ -29,7 +29,7 @@ export class FabricjsEditorComponent implements AfterViewInit {
   public textString: string;
   public url: string | ArrayBuffer = '';
   public size: any = {
-    width: 500,
+    width: 900,
     height: 800
   };
 
@@ -198,29 +198,30 @@ export class FabricjsEditorComponent implements AfterViewInit {
 
   // Block "Add figure"
 
-  addFigure(figure) {
+addFigure(figure) {
     let add: any;
     switch (figure) {
       case 'rectangle':
         add = new fabric.Rect({
           width: 200, height: 100, left: 10, top: 10, angle: 0,
-          fill: '#3f51b5'
+          fill: '#FFC408'
         });
         break;
       case 'square':
         add = new fabric.Rect({
           width: 100, height: 100, left: 10, top: 10, angle: 0,
-          fill: '#4caf50'
+          fill: '#DA7F57'
         });
         break;
       case 'triangle':
         add = new fabric.Triangle({
-          width: 100, height: 100, left: 10, top: 10, fill: '#2196f3'
+        
+          width: 100, height: 100, left: 10, top: 10, fill: '#BDD184'
         });
         break;
       case 'circle':
         add = new fabric.Circle({
-          radius: 50, left: 10, top: 10, fill: '#ff5722'
+          radius: 50, left: 10, top: 10, fill: '#5A55F7'
         });
         break;
     }
@@ -228,6 +229,7 @@ export class FabricjsEditorComponent implements AfterViewInit {
     this.canvas.add(add);
     this.selectItemAfterAdded(add);
   }
+
 
   /*Canvas*/
 

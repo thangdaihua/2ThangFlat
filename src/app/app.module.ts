@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router'
 
 
+
 import { AppComponent } from './app.component';
 import { FabricjsEditorModule } from 'projects/angular-editor-fabric-js/src/public-api';
 import { FormsModule } from '@angular/forms';
