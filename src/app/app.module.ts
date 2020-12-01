@@ -16,6 +16,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { DesignByDomainComponent } from './design-by-domain/design-by-domain.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,11 @@ import { SecondComponent } from './second/second.component';
 
     FirstComponent,
 
-    SecondComponent
+    SecondComponent,
+
+    DesignByDomainComponent,
+
+    
   ],
   imports: [
     RouterModule.forRoot([
@@ -48,6 +54,10 @@ import { SecondComponent } from './second/second.component';
       {
         path: 'main-page',
         component: MainPageComponent
+      },
+      {
+        path: 'by-domain',
+        component: DesignByDomainComponent
       }
     ]),
 
