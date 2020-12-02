@@ -17,7 +17,7 @@
                 <button class="dropdown-item" (click)="downloadImage($event)" type="button" data-toggle="modal"
                     data-target="#exampleModalCenter"> <img class="format" src="assets/img/png.png">PNG format</button>
                 <button class="dropdown-item" (click)="saveToSVG($event)" type="button" data-toggle="modal"
-                    data-target="#exampleModalCenter"><img class="format" src="assets/img/png.png">SGV format</button>
+                    data-target="#exampleModalCenter"><img class="format" src="assets/img/png.png">SVG format</button>
 
             </div>
         </div>
@@ -65,7 +65,7 @@
 <div class="row">
     <div class="col-6">
         <div class="row">
-            <div class="col-2">
+            <div class="col-4">
                 <button class="download btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Select your domain <i class="fas fa-sort-down"></i>
@@ -77,14 +77,17 @@
                     <button class="dropdown-item" type="button" (click)="setDomainEducation()">Education </button>
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-8">
                 <p class="domain-title"> Get the suggestion made just for {{domain}} domain knowledge! </p>
             </div>
-        </div>
-        <div *ngFor="let item of office" class="design-preview col"
+            <br>
+            <br><br>
+            <div *ngFor="let item of temp" class="design-preview col"
             (click)="setPreview(item.head, item.body, item.bottom,item.backdrops, item.style, item.pose, item.gender)">
             <img src="{{item.imageLink}}">
         </div>
+        </div>
+      
     </div>
     <div class="col-6" id="main-editor">
         <div class="d-flex justify-content-center">
