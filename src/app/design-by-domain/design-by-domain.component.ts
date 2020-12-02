@@ -30,8 +30,72 @@ export class DesignByDomainComponent  {
   gender="male"
   style="duotone"
   carouselHead=[]
+
+  temp=[
+    {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+    {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+    {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+    {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  ]
   
 office = [
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+]
+sport = [
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+]
+education = [
   {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
   {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
   {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
@@ -41,18 +105,53 @@ office = [
   {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
   {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
   {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+]
+marketing = [
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/1.svg", id: 1, head:"1", body:"2", bottom:"1", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/2.svg", id: 1, head:"1", body:"2", bottom:"2", backdrops:"4", style:"colorful", pose:"standing", gender:"female"},
+  {imageLink:"assets/images/backdrops/colorful/3.svg", id: 1, head:"1", body:"2", bottom:"3", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/4.svg", id: 1, head:"1", body:"2", bottom:"4", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/5.svg", id: 1, head:"1", body:"2", bottom:"5", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/6.svg", id: 1, head:"1", body:"2", bottom:"6", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/7.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
+  {imageLink:"assets/images/backdrops/colorful/8.svg", id: 1, head:"1", body:"2", bottom:"8", backdrops:"4", style:"colorful", pose:"standing", gender:"male"},
 ]
 setDomainEducation(){
   this.domain="Education";
+  this.temp=this.education
 }
 setDomainSport(){
   this.domain="Sport";
+  this.temp=this.sport
 }
 setDomainMarketing(){
   this.domain="Marketing";
+  this.temp=this.marketing
 }
 setDomainOffice(){
   this.domain="Office";
+  this.temp=this.office
 }
 setPreview(headPreview, bodyPreview, bottomPreview, backdropPreview, stylePreview, posePreview, genderPreview){
   this.headPreview = headPreview;
