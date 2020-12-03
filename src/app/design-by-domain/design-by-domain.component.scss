@@ -11,6 +11,8 @@
   margin: 1.75rem auto;
 }
 
+
+
 .format {
 	height: 30px;
 	width: 26px;
@@ -90,7 +92,7 @@ h3 {
   }
 
   .design-preview img{
-    padding-right: 20px;
+    padding-top: 10px;
     width: 100px;
   }
 
@@ -135,9 +137,8 @@ i {
 	border: none;
 }
 .tem {
-	width: 300px;
-	margin-left: 100px;
-
+	width: 200px;
+	display: block;
 }
 h3 {
 	font-weight: 500;
@@ -337,5 +338,6 @@ h3 {
 }
 
 #main-editor{
-    margin-top: 40px;
+    margin-top: 30px;
 }
+  

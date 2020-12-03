@@ -47,16 +47,17 @@
                     <div class="col-6">
                         <h3>Oh nice!</h3>
                         <p>
-                          All your creations are royalty-free for personal or commercial projects, forever.
+                            All your creations are royalty-free for personal or commercial projects, forever.
                         </p>
                         <br>
-                        <p>You can help support our ongoing efforts by sharing it with your friends or purchasing the full library.</p>
+                        <p>You can help support our ongoing efforts by sharing it with your friends or purchasing the
+                            full library.</p>
                         <p>
-                          Thank you!
+                            Thank you!
                         </p>
-                          <button class="share"> <i class="fas fa-share"></i> Share</button>
-                          <button class="donate"> <i class="fas fa-dollar-sign"></i> Donate us</button>
-                      </div>
+                        <button class="share"> <i class="fas fa-share"></i> Share</button>
+                        <button class="donate"> <i class="fas fa-dollar-sign"></i> Donate us</button>
+                    </div>
                 </div>
 
             </div>
@@ -64,9 +65,9 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-6">
+    <div class="col-7">
         <div class="row">
-            <div class="col-4">
+            <div class="col-3">
                 <button class="download btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Select your domain <i class="fas fa-sort-down"></i>
@@ -78,26 +79,25 @@
                     <button class="dropdown-item" type="button" (click)="setDomainEducation()">Education </button>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-9">
                 <p class="domain-title"> Get the suggestion made just for {{domain}} domain knowledge! </p>
             </div>
             <br>
             <br><br>
-            <div *ngFor="let item of temp" class="design-preview col"
-            (click)="setPreview(item.head, item.body, item.bottom,item.backdrops, item.style, item.pose, item.gender)">
-            <img class="d-flex justify-content-center" src="{{item.imageLink}}">
+            <div *ngFor="let item of temp" class="design-preview col" (click)="setPreview(item.head, item.body, item.bottom,item.backdrops, item.style, item.pose, item.gender)">
+                <img class="d-flex justify-content-center" src="{{item.imageLink}}">
+            </div>
         </div>
-        </div>
-      
+
     </div>
-    <div class="col-6" id="main-editor">
+    <div class="col-5" id="main-editor">
         <div class="d-flex justify-content-center">
             <img class="img-view" src="assets/images/backdrops/{{stylePreview}}/{{backdropPreview}}.svg">
-            <img class="img-view" src="assets/images/{{gender}}/head/{{stylePreview}}/{{headPreview}}.svg">
+            <img class="img-view" src="assets/images/{{genderPreview}}/head/{{stylePreview}}/{{headPreview}}.svg">
             <img class="img-view"
-                src="assets/images/{{gender}}/bottom/{{stylePreview}}/{{posePreview}}/{{bottomPreview}}.svg">
+                src="assets/images/{{genderPreview}}/bottom/{{stylePreview}}/{{posePreview}}/{{bottomPreview}}.svg">
             <img class="img-view"
-                src="assets/images/{{gender}}/top/{{stylePreview}}/{{posePreview}}/{{bottomPreview}}.svg">
+                src="assets/images/{{genderPreview}}/top/{{stylePreview}}/{{posePreview}}/{{bodyPreview}}.svg">
         </div>
     </div>
 </div>
