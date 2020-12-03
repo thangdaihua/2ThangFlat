@@ -190,7 +190,7 @@ export class EditorComponent {
         id: i.toString() , imageLink:"../assets/images-all/Bottom/" + i.toString() + ".svg"
       });
     }
-    for ( let i = 1; i<=24 ; i++){
+    for ( let i = 1; i<=37 ; i++){
       this.listAssetBackdrop.push({
         id: i.toString() , imageLink:"../assets/images-all/Backdrop/" + i.toString() + ".svg"
       });
