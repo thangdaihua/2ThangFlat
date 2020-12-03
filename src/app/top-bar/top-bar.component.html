@@ -5,9 +5,7 @@
       </a>
     </div>
     <div class="col-6">
-      <div class="d-flex justify-content-center">
-        <button class="ramdom"> Ramdomize</button>
-      </div>
+     
     </div>
     <div class="col-4">
       <div class="d-flex justify-content-end dropdown">
@@ -16,18 +14,12 @@
           Download <i class="fas fa-sort-down"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" (click)="downloadImage($event)" type="button" data-toggle="modal" data-target="#exampleModalCenter"> <img
-              class="format" src="assets/img/png.png">PNG format</button>
-          <button class="dropdown-item" (click)="saveToSVG($event)" type="button" data-toggle="modal" data-target="#exampleModalCenter"><img
-              class="format" src="assets/img/png.png">SGV format</button>
-  
+          <button class="dropdown-item" (click)="downloadImage($event)" type="button" data-toggle="modal" data-target="#exampleModalCenter"> PNG format</button>
+          <button class="dropdown-item" (click)="saveToSVG($event)" type="button" data-toggle="modal" data-target="#exampleModalCenter">SGV format</button>
         </div>
       </div>
-  
     </div>
-  
   </div>
-  
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -49,8 +41,10 @@
             <div class="col-6">
               <h3>Oh nice!</h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
+                All your creations are royalty-free for personal or commercial projects, forever.
               </p>
+              <br>
+              <p>You can help support our ongoing efforts by sharing it with your friends or purchasing the full library.</p>
               <p>
                 Thank you!
               </p>
@@ -58,7 +52,6 @@
                 <button class="donate"> <i class="fas fa-dollar-sign"></i> Donate us</button>
             </div>
         </div>
-        
         </div>
       </div>
     </div>
