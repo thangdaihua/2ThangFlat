@@ -45,8 +45,9 @@ button {
 	border: none;
 }
 .tem {
-	width: 200px;
-	display: block;
+	width: 300px;
+	margin-left: 30px;
+
 }
 h3 {
 	font-weight: 500;
@@ -74,3 +75,19 @@ p {
 .content-thanks {
 	padding-bottom: 30px;
 }
+
+.dropdown-item{
+	margin-top: 10px;
+	  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
+	  border: none;
+	  font-size: 15px;
+	  font-weight: bold;
+	  padding: 10px 35px 10px 35px !important;
+	  border-radius: 30px;
+	  color: white;
+}
+
+.modal-dialog{
+    max-width: 800px;
+    margin: 1.75rem auto;
+  }

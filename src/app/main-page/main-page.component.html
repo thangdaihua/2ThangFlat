@@ -89,7 +89,7 @@
             <owl-carousel-o [options]="customOptions">
                 <ng-container *ngFor="let item of carouselBackdrop">
                     <ng-template class="item-carousel" carouselSlide>
-                        <div class="preview">
+                        <div class="preview"z>
                             <button class="active" (click)="setBackdropOption(item.id)">
                                 <img class="backdrop-preivew" src="{{item.imageLink}}">
                             </button>

@@ -13,7 +13,6 @@
 	padding: 10px 35px 10px 35px;
 	border-radius: 30px;
 	color: white;
-	
 }
 .download {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
@@ -23,7 +22,6 @@
 	padding: 10px 35px 10px 35px !important;
 	border-radius: 30px;
 	color: white;
-	
 }
 
 i {
@@ -39,8 +37,9 @@ i {
 	border: none;
 }
 .tem {
-	width: 200px;
-	display: block;
+	width: 300px;
+	margin-left: 100px;
+
 }
 h3 {
 	font-weight: 500;
@@ -83,8 +82,6 @@ h3 {
     }
   }
   
- 
-  
   .custom-item {
     border-bottom: 2px solid #f3f3f3;
   
@@ -92,12 +89,10 @@ h3 {
       color: #9491F6;
       font-weight: 500;
     }
-  
     .custom-item-body {
       padding: 10px 0;
     }
   }
-  
   .max-height{
     padding: 0px;
     overflow: auto;
@@ -161,7 +156,6 @@ h3 {
   }
 
   .upload-image{
-    
     background-color: white;
     padding-bottom: 0px !important;
     padding: 20px;
@@ -213,7 +207,7 @@ h3 {
   }
   #pill a{
     color: #240052;
-    }
+  }
 
   .add-asset{
     background-color: #F6F8FD;
@@ -222,9 +216,18 @@ h3 {
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
   
-.action{
-  background-color: #F6F8FD;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
+.dropdown-item{
+  margin-top: 10px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 35px 10px 35px !important;
+	border-radius: 30px;
+	color: white;
+}
+
+.modal-dialog{
+  max-width: 1000px;
+  margin: 1.75rem auto;
 }
