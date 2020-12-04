@@ -38,7 +38,7 @@ export class MainPageComponent implements OnInit {
         id: i.toString() , imageLink:"assets/images/" + this.gender + "/bottom/" + this.style + "/" + this.pose + "/" + i.toString() + ".svg"
       });
     }
-    for ( let i = 1; i<=21 ; i++){
+    for ( let i = 1; i<=8 ; i++){
       this.carouselBackdrop.push({
         id: i.toString() , imageLink:"assets/images/backdrops/" + this.style + "/" + i.toString() + ".svg"
       });
@@ -67,7 +67,7 @@ export class MainPageComponent implements OnInit {
     }
 
     this.carouselBackdrop.splice(0, this.carouselHead.length)
-    for ( let i = 1; i<=21 ; i++){
+    for ( let i = 1; i<=8 ; i++){
       this.carouselBackdrop.push({
         id: i.toString() , imageLink:"assets/images/backdrops/" + this.style + "/" + i.toString() + ".svg"
       });
@@ -96,7 +96,7 @@ export class MainPageComponent implements OnInit {
     }
 
     this.carouselBackdrop.splice(0, this.carouselHead.length)
-    for ( let i = 1; i<=21 ; i++){
+    for ( let i = 1; i<=8 ; i++){
       this.carouselBackdrop.push({
         id: i.toString() , imageLink:"assets/images/backdrops/" + this.style + "/" + i.toString() + ".svg"
       });
@@ -190,7 +190,7 @@ export class MainPageComponent implements OnInit {
       });
     }
     this.carouselBackdrop.splice(0, this.carouselHead.length)
-    for ( let i = 1; i<=21 ; i++){
+    for ( let i = 1; i<=8 ; i++){
       this.carouselBackdrop.push({
         id: i.toString() , imageLink:"assets/images/backdrops/" + this.style + "/" + i.toString() + ".svg"
       });
@@ -225,7 +225,7 @@ export class MainPageComponent implements OnInit {
       });
     }
     this.carouselBackdrop.splice(0, this.carouselHead.length)
-    for ( let i = 1; i<=21 ; i++){
+    for ( let i = 1; i<=8 ; i++){
       this.carouselBackdrop.push({
         id: i.toString() , imageLink:"assets/images/backdrops/" + this.style + "/" + i.toString() + ".svg"
       });

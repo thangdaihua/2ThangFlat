@@ -36,11 +36,13 @@
             <img class="img-content" src="assets/images/{{gender}}/top/{{style}}/{{pose}}/{{fileNameTop}}.svg">
         </div>
     </div>
+   
+   
     <div class="col-1">
-        <p style="font-size: 10px;" >
+        <!-- <p style="font-size: 10px;" >
             imageLink:"assets/images-preview/office/adadad.png", id: 1, head:"{{fileNameHead}}", body:"{{fileNameTop}}", 
             bottom:"{{fileNameBottom}}", backdrops:"{{fileNameBackdrops}}", style:"{{style}}", pose:"{{pose}}", gender:"{{gender}}"
-        </p>
+        </p> -->
     </div>
     <div class="col-3">
         <div class="component-options">
@@ -92,7 +94,7 @@
             <owl-carousel-o [options]="customOptions">
                 <ng-container *ngFor="let item of carouselBackdrop">
                     <ng-template class="item-carousel" carouselSlide>
-                        <div class="preview"z>
+                        <div class="preview">
                             <button class="active" (click)="setBackdropOption(item.id)">
                                 <img class="backdrop-preivew" src="{{item.imageLink}}">
                             </button>
