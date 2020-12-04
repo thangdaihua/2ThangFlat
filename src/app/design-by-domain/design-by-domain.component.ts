@@ -20,7 +20,7 @@ export class DesignByDomainComponent {
   posePreview = "standing"
   genderPreview = "male"
 
-  domain = "Education"
+  domain = "Office"
 
   fileNameBackdrops = "1"
   fileNameHead = "1"
