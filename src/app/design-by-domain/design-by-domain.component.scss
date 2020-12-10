@@ -5,43 +5,55 @@
 	margin-left: 30px;
 	margin-right: 30px;
 }
-
-.modal-dialog{
-  max-width: 1000px;
-  margin: 1.75rem auto;
+.ramdom {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,233,0,1) 0%, rgba(228,106,36,1) 100%);
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 35px 10px 35px;
+	border-radius: 30px;
+	color: white;
+	
 }
-
-
-
+.download {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 35px 10px 35px;
+	border-radius: 30px;
+	color: white;
+	
+}
+i {
+	margin-left: 10px;
+}
 .format {
 	height: 30px;
 	width: 26px;
 	margin-right: 10px;
 }
-.dropdown-menu {
-	background: none;
-  border: none;
-}
-
-.dropdown-item{
-  margin-top: 10px;
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
-	border: none;
+button {
+	color: #1E0062;
 	font-size: 15px;
 	font-weight: bold;
-	padding: 10px 35px 10px 35px !important;
-	border-radius: 30px;
-	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.dropdown-menu {
+	background: none;
+	border: none;
 }
 .tem {
-	width: 200px;
-	display: block;
+	width: 300px;
+    margin-left: 30px;
+
 }
 h3 {
 	font-weight: 500;
 	color: #240052;
 }
-.text-modal {
+p {
 	font-size: 15px;
 	font-weight: 400;
 	color: #6F5591;
@@ -62,6 +74,27 @@ h3 {
 }
 .content-thanks {
 	padding-bottom: 30px;
+}
+
+.dropdown-item{
+	margin-top: 10px;
+	  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
+	  border: none;
+	  font-size: 15px;
+	  font-weight: bold;
+	  padding: 10px 35px 10px 35px !important;
+	  border-radius: 30px;
+	  color: white;
+}
+
+.modal-dialog{
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+.modal-dialog{
+  max-width: 800px;
+  margin: 1.75rem auto;
 }
 
 .main-title{
@@ -137,7 +170,7 @@ i {
 	border: none;
 }
 .tem {
-	width: 200px;
+	
 	display: block;
 }
 h3 {
