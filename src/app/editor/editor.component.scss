@@ -37,33 +37,26 @@ i {
 	border: none;
 }
 .tem {
-	width: 300px;
-	margin-left: 100px;
+	width: 250px;
+    margin-left: 30px;
 
 }
 h3 {
 	font-weight: 500;
 	color: #240052;
 }
+p {
+	font-size: 15px;
+	font-weight: 400;
+	color: #6F5591;
+}
+
 .text-modal {
 	font-size: 15px;
 	font-weight: 400;
 	color: #6F5591;
 }
-.share {
-	background: #5A55F7;
-	border: none;
-	font-weight: bold;
-	padding: 10px 10px 10px 10px;
-	border-radius: 30px;
-	color: white;
-}
-.donate {
-	background: none;
-	border: none;
-	font-weight: bold;
-	color: #5A55F7;
-}
+
 .content-thanks {
 	padding-bottom: 30px;
 }
@@ -228,6 +221,6 @@ h3 {
 }
 
 .modal-dialog{
-  max-width: 1000px;
+  max-width: 800px;
   margin: 1.75rem auto;
 }
