@@ -13,7 +13,6 @@
 	padding: 10px 35px 10px 35px;
 	border-radius: 30px;
 	color: white;
-	
 }
 .download {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
@@ -23,7 +22,6 @@
 	padding: 10px 35px 10px 35px;
 	border-radius: 30px;
 	color: white;
-	
 }
 i {
 	margin-left: 10px;
@@ -47,7 +45,6 @@ button {
 .tem {
 	width: 250px;
     margin-left: 30px;
-
 }
 h3 {
 	font-weight: 500;
@@ -58,11 +55,9 @@ p {
 	font-weight: 400;
 	color: #6F5591;
 }
-
 .content-thanks {
 	padding-bottom: 30px;
 }
-
 .dropdown-item{
 	margin-top: 10px;
 	  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
@@ -73,17 +68,14 @@ p {
 	  border-radius: 30px;
 	  color: white;
 }
-
 .modal-dialog{
     max-width: 800px;
     margin: 1.75rem auto;
 }
-
 .modal-dialog{
   max-width: 800px;
   margin: 1.75rem auto;
 }
-
 .main-title{
     margin-top: 10px;
   }
@@ -92,12 +84,10 @@ p {
     cursor: pointer;
     padding: 3px;
     max-width: 120px;
-  
     &:hover {
       opacity: 0.7;
     }
   }
-
   .design-preview{
     margin: 20px;
     width: 120px !important;
@@ -105,17 +95,13 @@ p {
     background-color: white;
     border-radius: 10px;
   }
-
   .design-preview:hover{
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
- 
   }
-
   .design-preview img{
     padding-top: 10px;
     width: 100px;
   }
-
   .logo {
 	width: 120px;
 }
@@ -131,7 +117,6 @@ p {
 	padding: 10px 35px 10px 35px;
 	border-radius: 30px;
 	color: white;
-	
 }
 .download {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
@@ -141,9 +126,7 @@ p {
 	padding: 10px 35px 10px 35px !important;
 	border-radius: 30px;
 	color: white;
-	
 }
-
 i {
 	margin-left: 10px;
 }
@@ -157,7 +140,6 @@ i {
 	border: none;
 }
 .tem {
-	
 	display: block;
 }
 h3 {
@@ -186,7 +168,6 @@ h3 {
 .content-thanks {
 	padding-bottom: 30px;
 }
-
 .main-title{
     margin-top: 10px;
   }
@@ -195,33 +176,25 @@ h3 {
     cursor: pointer;
     padding: 3px;
     max-width: 120px;
-  
     &:hover {
       opacity: 0.7;
     }
   }
-  
- 
-  
   .custom-item {
     border-bottom: 2px solid #f3f3f3;
-  
     .custom-item-title {
       color: #9491F6;
       font-weight: 500;
     }
-  
     .custom-item-body {
       padding: 10px 0;
     }
   }
-  
   .max-height{
     padding: 0px;
     overflow: auto;
     max-height: 450px;
   }
-  
   .max-height::-webkit-scrollbar {
     width: 10px;
   } 
@@ -229,7 +202,6 @@ h3 {
   background-color: #240052; 
   border-radius: 5px
   }
-
   //Custom css
   .title-left {
     font-weight: bold;
@@ -246,24 +218,19 @@ h3 {
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
     border-radius: 10px;
   }
-
   .btn {
     border: none;
     background-color: transparent;
     padding: 0px;
-    
   }
-
 .figure {
     margin-right: 10px;
   }
-
   .image-btn{
     height: 70px;
   }
   .image-figure{
     height: 45px;
-    
   }
   .images-item-upload{
     text-align: center;
@@ -277,27 +244,20 @@ h3 {
   background-color: transparent;
   border: none;
   }
-
   .upload-image{
-    
     background-color: white;
     padding-bottom: 0px !important;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-
   .custom{
     background-color: white;
-    
     padding-bottom: 0px !important;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-
-
-
 .nav-tabs{
     border-bottom: none;
   }
@@ -319,7 +279,6 @@ h3 {
   box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   margin: 8px;
 }
-
 #pill li.active>a{
   background: #5A55F7;
   box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
@@ -329,35 +288,28 @@ h3 {
   #pill a{
     color: #240052;
     }
-
   .add-asset{
     background-color: #F6F8FD;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-  
 .action{
   background-color: #F6F8FD;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
 }   
-
 .domain-title{
   font-weight: 500;
     font-size: larger;
     padding-top: 10px;
     color: #5A55F7;
 }
-
-
 .img-view{
   position: absolute;
  width: 600px;
 }
-
 #main-editor{
     margin-top: 30px;
 }
-  

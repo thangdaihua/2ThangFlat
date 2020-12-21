@@ -23,7 +23,6 @@
 	border-radius: 30px;
 	color: white;
 }
-
 i {
 	margin-left: 10px;
 }
@@ -39,7 +38,6 @@ i {
 .tem {
 	width: 250px;
     margin-left: 30px;
-
 }
 h3 {
 	font-weight: 500;
@@ -50,17 +48,14 @@ p {
 	font-weight: 400;
 	color: #6F5591;
 }
-
 .text-modal {
 	font-size: 15px;
 	font-weight: 400;
 	color: #6F5591;
 }
-
 .content-thanks {
 	padding-bottom: 30px;
 }
-
 .main-title{
     margin-top: 10px;
   }
@@ -69,15 +64,12 @@ p {
     cursor: pointer;
     padding: 3px;
     max-width: 120px;
-  
     &:hover {
       opacity: 0.7;
     }
   }
-  
   .custom-item {
     border-bottom: 2px solid #f3f3f3;
-  
     .custom-item-title {
       color: #9491F6;
       font-weight: 500;
@@ -91,7 +83,6 @@ p {
     overflow: auto;
     max-height: 450px;
   }
-  
   .max-height::-webkit-scrollbar {
     width: 10px;
   } 
@@ -99,7 +90,6 @@ p {
   background-color: #240052; 
   border-radius: 5px
   }
-
   //Custom css
   .title-left {
     font-weight: bold;
@@ -116,24 +106,19 @@ p {
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
     border-radius: 10px;
   }
-
   .btn {
     border: none;
     background-color: transparent;
     padding: 0px;
-    
   }
-
 .figure {
     margin-right: 10px;
   }
-
   .image-btn{
     height: 70px;
   }
   .image-figure{
     height: 45px;
-    
   }
   .images-item-upload{
     text-align: center;
@@ -147,7 +132,6 @@ p {
   background-color: transparent;
   border: none;
   }
-
   .upload-image{
     background-color: white;
     padding-bottom: 0px !important;
@@ -155,21 +139,15 @@ p {
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-
   .custom{
     background-color: white;
-    
     padding-bottom: 0px !important;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-
-
   .action-eletment{
-
   }
-
 .nav-tabs{
     border-bottom: none;
   }
@@ -191,7 +169,6 @@ p {
   box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   margin: 8px;
 }
-
 #pill li.active>a{
   background: #5A55F7;
   box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
@@ -201,14 +178,12 @@ p {
   #pill a{
     color: #240052;
   }
-
   .add-asset{
     background-color: #F6F8FD;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px rgba(11, 11, 11, 0.16);
   }
-  
 .dropdown-item{
   margin-top: 10px;
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,196,253,1) 0%, rgba(102,132,228,1) 100%);
@@ -219,7 +194,6 @@ p {
 	border-radius: 30px;
 	color: white;
 }
-
 .modal-dialog{
   max-width: 800px;
   margin: 1.75rem auto;
